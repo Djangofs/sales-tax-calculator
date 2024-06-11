@@ -7,7 +7,7 @@ This program takes inputs from the `inputs` folder, and formats them according t
 - Node v20+
 - Yarn / npm
 
-Installation instructions for those can be found (here)[https://docs.npmjs.com/downloading-and-installing-node-js-and-npm]
+Installation instructions for those can be found [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 ## Installing dependencies
 
