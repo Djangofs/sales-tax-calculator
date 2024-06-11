@@ -20,7 +20,6 @@ describe("tax", () => {
       { quantity: 1, name: "bottle of perfume", price: 18.99, output: 1.9 },
       { quantity: 1, name: "packet of headache pills", price: 9.75, output: 0 },
     ];
-    const output = 1.5;
 
     // Act
     items.forEach((item) => {
