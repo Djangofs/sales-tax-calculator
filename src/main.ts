@@ -1,5 +1,7 @@
 import { promises as fsPromises } from "fs";
 
+import { processBasket } from "./process-basket";
+
 const FILE_PATH = "./inputs";
 const OUTPUT_PATH = "./outputs";
 
@@ -33,7 +35,7 @@ const main = async (): Promise<void> => {
     // Replace data with processed version
     console.log(`🟢 Processing file ${file}`);
     const newFileName = `${OUTPUT_PATH}/output_${file}`;
-    await fsPromises.writeFile(`${newFileName}`, data);
+    await fsPromises.writeFile(`${newFileName}`, processBasket(data));
     console.log(`🟢 File ${file} processed and saved in ${newFileName}`);
   }
 };
