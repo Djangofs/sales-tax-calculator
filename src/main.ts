@@ -31,8 +31,6 @@ const main = async (): Promise<void> => {
     console.log(`🟢 Reading file ${file}`);
     const data = await fsPromises.readFile(`${FILE_PATH}/${file}`, "utf-8");
 
-    // Do something with the data
-    // Replace data with processed version
     console.log(`🟢 Processing file ${file}`);
     const newFileName = `${OUTPUT_PATH}/output_${file}`;
     await fsPromises.writeFile(`${newFileName}`, processBasket(data));
